@@ -1,0 +1,11 @@
+{
+  "manifest_version": 1,
+  "name": "elms-no-timeout",
+  "version": "0.1",
+  "description": "ELMSでタイムアウト画面になってしまうのを何とかします。",
+  "content_scripts": [
+    {
+      "matches": ["https://elms.hogehoge"]
+    }
+  ]
+}
