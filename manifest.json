@@ -1,11 +1,28 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "elms-no-timeout",
   "version": "0.1",
   "description": "ELMSでタイムアウト画面になってしまうのを何とかします。",
   "content_scripts": [
     {
-      "matches": ["https://elms.hogehoge"]
+      "matches": [
+        "https://*.hokudai.ac.jp/sso/timeout.*",
+        "https://*.hokudai.ac.jp/pub/login.*"
+      ],
+      "js": ["content.js"]
     }
-  ]
+  ],
+  "page_action": {
+    "default_icon": {
+      "16": "images/image16.png",
+      "32": "images/image32.png",
+      "48": "images/image48.png",
+      "128": "images/image128.png"
+    }
+  },
+  "icons": {
+    "16": "images/image16.png",
+    "48": "images/image48.png",
+    "128": "images/image128.png"
+  }
 }
