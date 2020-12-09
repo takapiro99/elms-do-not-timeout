@@ -12,6 +12,7 @@
       "js": ["content.js"]
     }
   ],
+  "permissions": ["https://*.hokudai.ac.jp/*"],
   "page_action": {
     "default_icon": {
       "16": "images/image16.png",
